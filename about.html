@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Alex Dubois Photographe</title>
+    <meta name="description" content="Découvrez Alex Dubois, photographe passionné. Mon histoire, ma philosophie et mon approche unique de la photographie.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="À propos - Alex Dubois Photographe">
+    <meta property="og:description" content="Découvrez Alex Dubois, photographe passionné. Mon histoire, ma philosophie et mon approche unique de la photographie.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__content">
+                <!-- Logo -->
+                <a href="index.html" class="nav__logo">
+                    <i data-lucide="camera" class="nav__logo-icon"></i>
+                    <span class="nav__logo-text">Alex Dubois</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Accueil</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="portfolio.html" class="nav__link">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link nav__link--active">À propos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i data-lucide="menu" class="nav__toggle-icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- About Hero -->
+        <section class="about-hero section">
+            <div class="container">
+                <div class="about-hero__content">
+                    <div class="about-hero__image">
+                        <div class="about-hero__image-placeholder">
+                            <i data-lucide="camera" class="about-hero__image-icon"></i>
+                            <div class="about-hero__image-overlay">
+                                <p class="about-hero__image-name">Alex Dubois</p>
+                                <p class="about-hero__image-title">Photographe Passionné</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-hero__text">
+                        <div class="about-hero__header">
+                            <h1 class="about-hero__title">Bonjour, je suis Alex</h1>
+                            <div class="about-hero__divider"></div>
+                            <p class="about-hero__description" id="photographer-bio">
+                                Photographe passionné spécialisé dans la capture d'émotions authentiques. Mon approche artistique mélange spontanéité et composition soignée pour créer des images qui racontent votre histoire unique.
+                            </p>
+                        </div>
+                        
+                        <div class="about-hero__details">
+                            <div class="about-hero__detail">
+                                <i data-lucide="map-pin" class="about-hero__detail-icon"></i>
+                                <span id="photographer-location">Paris & région parisienne</span>
+                            </div>
+                            <div class="about-hero__detail">
+                                <i data-lucide="award" class="about-hero__detail-icon"></i>
+                                <span id="photographer-experience">5+ années d'expérience</span>
+                            </div>
+                            <div class="about-hero__detail">
+                                <i data-lucide="camera" class="about-hero__detail-icon"></i>
+                                <span>Spécialisé en mariages, nature & gastronomie</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats section section--dark">
+            <div class="container">
+                <div class="stats__grid">
+                    <div class="stats__item">
+                        <div class="stats__number">150+</div>
+                        <div class="stats__label">Mariages capturés</div>
+                    </div>
+                    <div class="stats__item">
+                        <div class="stats__number">500+</div>
+                        <div class="stats__label">Photos nature</div>
+                    </div>
+                    <div class="stats__item">
+                        <div class="stats__number">50+</div>
+                        <div class="stats__label">Restaurants partenaires</div>
+                    </div>
+                    <div class="stats__item">
+                        <div class="stats__number">100%</div>
+                        <div class="stats__label">Clients satisfaits</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story section">
+            <div class="container">
+                <div class="story__content">
+                    <div class="story__cards">
+                        <div class="story__card story__card--primary animate-on-scroll">
+                            <i data-lucide="heart" class="story__card-icon"></i>
+                            <h3 class="story__card-title">Ma Passion</h3>
+                            <p class="story__card-text">
+                                Depuis mon enfance, j'ai toujours été fasciné par la capacité de la photographie à figer des moments éphémères. 
+                                Chaque clic est une opportunité de révéler la beauté qui nous entoure et de créer des souvenirs intemporels.
+                            </p>
+                        </div>
+                        
+                        <div class="story__card story__card--secondary animate-on-scroll">
+                            <i data-lucide="eye" class="story__card-icon"></i>
+                            <h3 class="story__card-title">Mon Regard</h3>
+                            <p class="story__card-text">
+                                Je crois que chaque photo doit raconter une histoire authentique. Mon approche se concentre sur la capture 
+                                d'émotions vraies, de gestes spontanés et de moments précieux qui font la richesse de votre expérience.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="story__skills">
+                        <h3 class="story__skills-title">Mes Compétences</h3>
+                        <div class="skills__list">
+                            <div class="skill__item">
+                                <div class="skill__header">
+                                    <span class="skill__name">Photographie de Mariage</span>
+                                    <span class="skill__percentage">95%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill__item">
+                                <div class="skill__header">
+                                    <span class="skill__name">Photographie Nature</span>
+                                    <span class="skill__percentage">88%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" style="width: 88%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill__item">
+                                <div class="skill__header">
+                                    <span class="skill__name">Photographie Culinaire</span>
+                                    <span class="skill__percentage">92%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" style="width: 92%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill__item">
+                                <div class="skill__header">
+                                    <span class="skill__name">Post-traitement</span>
+                                    <span class="skill__percentage">90%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="philosophy section section--alt">
+            <div class="container">
+                <div class="philosophy__content">
+                    <h2 class="philosophy__title">Ma Philosophie</h2>
+                    <div class="philosophy__divider"></div>
+                    
+                    <blockquote class="philosophy__quote">
+                        « Une bonne photo ne se contente pas de capturer ce qui est visible, 
+                        elle révèle ce qui est ressenti. »
+                    </blockquote>
+                    
+                    <p class="philosophy__description">
+                        Mon travail est guidé par la conviction que chaque moment mérite d'être célébré. 
+                        Que ce soit l'émotion d'un mariage, la sérénité d'un paysage naturel ou l'art 
+                        culinaire d'un chef, je m'efforce de créer des images qui touchent l'âme.
+                    </p>
+                    
+                    <div class="philosophy__values">
+                        <div class="value__card hover-lift">
+                            <div class="value__icon">
+                                <i data-lucide="heart" class="value__icon-element"></i>
+                            </div>
+                            <h3 class="value__title">Authenticité</h3>
+                            <p class="value__text">
+                                Capturer des moments vrais et spontanés, sans artifice ni mise en scène forcée.
+                            </p>
+                        </div>
+                        
+                        <div class="value__card hover-lift">
+                            <div class="value__icon">
+                                <i data-lucide="star" class="value__icon-element"></i>
+                            </div>
+                            <h3 class="value__title">Excellence</h3>
+                            <p class="value__text">
+                                Chaque détail compte, de la composition à la retouche, pour un résultat impeccable.
+                            </p>
+                        </div>
+                        
+                        <div class="value__card hover-lift">
+                            <div class="value__icon">
+                                <i data-lucide="users" class="value__icon-element"></i>
+                            </div>
+                            <h3 class="value__title">Proximité</h3>
+                            <p class="value__text">
+                                Créer une relation de confiance avec mes clients pour des photos naturelles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Mes Services</h2>
+                    <p class="section__subtitle">
+                        Des prestations personnalisées pour chaque projet
+                    </p>
+                </div>
+                
+                <div class="services__grid" id="services-grid">
+                    <!-- Services will be loaded by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section section--dark">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Travaillons ensemble</h2>
+                    <p class="cta__description">
+                        Vous avez un projet en tête ? Parlons-en autour d'un café pour donner vie à vos idées.
+                    </p>
+                    <div class="cta__buttons">
+                        <a href="contact.html" class="btn btn--accent">
+                            Me contacter
+                            <i data-lucide="chevron-right" class="btn__icon"></i>
+                        </a>
+                        <a href="portfolio.html" class="btn btn--outline">
+                            Voir mon travail
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer__logo">
+                        <i data-lucide="camera" class="footer__logo-icon"></i>
+                        <span class="footer__logo-text">Alex Dubois</span>
+                    </div>
+                    <p class="footer__description">
+                        Photographe passionné capturant vos moments les plus précieux avec
+                        une approche artistique et authentique.
+                    </p>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Contact</h3>
+                    <div class="footer__contact">
+                        <div class="footer__contact-item">
+                            <i data-lucide="mail" class="footer__contact-icon"></i>
+                            <a href="mailto:contact@alexdubois-photo.fr" class="footer__contact-link">
+                                contact@alexdubois-photo.fr
+                            </a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i data-lucide="phone" class="footer__contact-icon"></i>
+                            <a href="tel:+33612345678" class="footer__contact-link">
+                                +33 6 12 34 56 78
+                            </a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i data-lucide="map-pin" class="footer__contact-icon"></i>
+                            <span>Paris & région parisienne</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Suivez-moi</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <i data-lucide="instagram" class="footer__social-icon"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <i data-lucide="facebook" class="footer__social-icon"></i>
+                        </a>
+                    </div>
+                    <div class="footer__note">
+                        <p>Disponible pour vos projets photographiques partout en France.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2025 Alex Dubois Photographie. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Alex Dubois Photographe</title>
+    <meta name="description" content="Contactez Alex Dubois pour vos projets photographiques. Mariages, nature, gastronomie - discutons de vos besoins.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact - Alex Dubois Photographe">
+    <meta property="og:description" content="Contactez Alex Dubois pour vos projets photographiques. Mariages, nature, gastronomie - discutons de vos besoins.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- EmailJS (optional - for functional contact form) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> -->
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__content">
+                <!-- Logo -->
+                <a href="index.html" class="nav__logo">
+                    <i data-lucide="camera" class="nav__logo-icon"></i>
+                    <span class="nav__logo-text">Alex Dubois</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Accueil</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="portfolio.html" class="nav__link">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link">À propos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i data-lucide="menu" class="nav__toggle-icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero__content">
+                    <div class="page-hero__icon">
+                        <i data-lucide="mail" class="page-hero__icon-element"></i>
+                    </div>
+                    <h1 class="page-hero__title">Contactez-moi</h1>
+                    <p class="page-hero__description">
+                        Parlons de votre projet photographique et donnons vie à vos idées
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section">
+            <div class="container">
+                <div class="contact__content">
+                    <!-- Contact Information -->
+                    <div class="contact__info">
+                        <div class="contact__info-header">
+                            <h2 class="contact__info-title">Discutons de votre projet</h2>
+                            <p class="contact__info-description">
+                                Chaque projet est unique. N'hésitez pas à me parler de vos attentes 
+                                et nous trouverons ensemble la meilleure approche.
+                            </p>
+                        </div>
+                        
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <i data-lucide="mail" class="contact__detail-icon-element"></i>
+                                </div>
+                                <div class="contact__detail-content">
+                                    <h3 class="contact__detail-title">Email</h3>
+                                    <a href="mailto:contact@alexdubois-photo.fr" class="contact__detail-link">
+                                        contact@alexdubois-photo.fr
+                                    </a>
+                                    <small class="contact__detail-small">Réponse sous 24h</small>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <i data-lucide="phone" class="contact__detail-icon-element"></i>
+                                </div>
+                                <div class="contact__detail-content">
+                                    <h3 class="contact__detail-title">Téléphone</h3>
+                                    <a href="tel:+33612345678" class="contact__detail-link">
+                                        +33 6 12 34 56 78
+                                    </a>
+                                    <small class="contact__detail-small">Lun-Sam 9h-18h</small>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <i data-lucide="map-pin" class="contact__detail-icon-element"></i>
+                                </div>
+                                <div class="contact__detail-content">
+                                    <h3 class="contact__detail-title">Zone d'intervention</h3>
+                                    <p class="contact__detail-text">Paris & région parisienne</p>
+                                    <small class="contact__detail-small">Déplacements possibles</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__services">
+                            <h3 class="contact__services-title">Mes spécialités</h3>
+                            <div class="contact__services-list" id="contact-services">
+                                <!-- Services will be loaded by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact__form-container">
+                        <!-- Success Message -->
+                        <div class="contact__success" id="contact-success" style="display: none;">
+                            <div class="contact__success-icon">
+                                <i data-lucide="check-circle" class="contact__success-icon-element"></i>
+                            </div>
+                            <h3 class="contact__success-title">Message envoyé avec succès !</h3>
+                            <p class="contact__success-text">
+                                Merci <span id="success-name"></span> pour votre message. 
+                                Je vous recontacterai dans les plus brefs délais.
+                            </p>
+                            <div class="contact__success-summary">
+                                <h4>Récapitulatif de votre demande :</h4>
+                                <div class="contact__success-details" id="success-details"></div>
+                            </div>
+                            <div class="contact__success-buttons">
+                                <button class="btn btn--primary" id="send-another">
+                                    Envoyer un autre message
+                                </button>
+                                <a href="portfolio.html" class="btn btn--secondary">
+                                    Découvrir mon travail
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Error Message -->
+                        <div class="contact__error" id="contact-error" style="display: none;">
+                            <div class="contact__error-icon">
+                                <i data-lucide="alert-circle" class="contact__error-icon-element"></i>
+                            </div>
+                            <h3 class="contact__error-title">Erreur d'envoi</h3>
+                            <p class="contact__error-text" id="error-message">
+                                Une erreur s'est produite lors de l'envoi de votre message.
+                            </p>
+                            <button class="btn btn--primary" onclick="hideMessages()">
+                                Réessayer
+                            </button>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <form class="contact__form" id="contact-form">
+                            <div class="contact__form-header">
+                                <i data-lucide="send" class="contact__form-icon"></i>
+                                <h3 class="contact__form-title">Envoyer un message</h3>
+                            </div>
+                            
+                            <div class="contact__form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Nom complet *</label>
+                                    <input type="text" id="name" name="name" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email *</label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__form-row">
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Téléphone</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="date" class="form-label">Date souhaitée</label>
+                                    <input type="date" id="date" name="date" class="form-input">
+                                </div>
+                            </div>
+                            
+                            <div class="contact__form-row">
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Sujet *</label>
+                                    <input type="text" id="subject" name="subject" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="category" class="form-label">Type de projet *</label>
+                                    <select id="category" name="category" class="form-select" required>
+                                        <option value="">Sélectionnez un type</option>
+                                        <option value="mariage">Mariage</option>
+                                        <option value="nature">Nature</option>
+                                        <option value="nourriture">Gastronomie</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="6" 
+                                         placeholder="Décrivez votre projet, vos attentes, le lieu, le nombre de personnes..."
+                                         required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                                <span class="btn__text">Envoyer le message</span>
+                                <div class="btn__spinner" style="display: none;">
+                                    <div class="spinner"></div>
+                                    <span>Envoi en cours...</span>
+                                </div>
+                            </button>
+                            
+                            <p class="contact__form-note">
+                                * Champs obligatoires. Vos données sont traitées confidentiellement.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer__logo">
+                        <i data-lucide="camera" class="footer__logo-icon"></i>
+                        <span class="footer__logo-text">Alex Dubois</span>
+                    </div>
+                    <p class="footer__description">
+                        Photographe passionné capturant vos moments les plus précieux avec
+                        une approche artistique et authentique.
+                    </p>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Contact</h3>
+                    <div class="footer__contact">
+                        <div class="footer__contact-item">
+                            <i data-lucide="mail" class="footer__contact-icon"></i>
+                            <a href="mailto:contact@alexdubois-photo.fr" class="footer__contact-link">
+                                contact@alexdubois-photo.fr
+                            </a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i data-lucide="phone" class="footer__contact-icon"></i>
+                            <a href="tel:+33612345678" class="footer__contact-link">
+                                +33 6 12 34 56 78
+                            </a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i data-lucide="map-pin" class="footer__contact-icon"></i>
+                            <span>Paris & région parisienne</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Suivez-moi</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <i data-lucide="instagram" class="footer__social-icon"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <i data-lucide="facebook" class="footer__social-icon"></i>
+                        </a>
+                    </div>
+                    <div class="footer__note">
+                        <p>Disponible pour vos projets photographiques partout en France.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2025 Alex Dubois Photographie. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script/main.js"></script>
+    <script src="script/contact.js"></script>
+</body>
+</html>
