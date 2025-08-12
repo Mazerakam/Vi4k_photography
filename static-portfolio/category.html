@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Alex Dubois Photographe</title>
+    <meta name="description" content="Découvrez la galerie photographique d'Alex Dubois dans cette catégorie spécifique.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__content">
+                <a href="index.html" class="nav__logo">
+                    <i data-lucide="camera" class="nav__logo-icon"></i>
+                    <span class="nav__logo-text">Alex Dubois</span>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Accueil</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="portfolio.html" class="nav__link nav__link--active">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link">À propos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i data-lucide="menu" class="nav__toggle-icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="category-hero section">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="portfolio.html" class="breadcrumb__link">
+                        <i data-lucide="chevron-left" class="breadcrumb__icon"></i>
+                        Portfolio
+                    </a>
+                    <span class="breadcrumb__separator">/</span>
+                    <span class="breadcrumb__current" id="breadcrumb-category">Catégorie</span>
+                </div>
+
+                <div class="category-hero__content">
+                    <h1 class="category-hero__title" id="category-title">Catégorie</h1>
+                    <p class="category-hero__description" id="category-description">
+                        Description de la catégorie
+                    </p>
+                    <div class="category-hero__meta">
+                        <div class="category-hero__meta-item">
+                            <i data-lucide="camera" class="category-hero__meta-icon"></i>
+                            <span id="category-count">0 photo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="category-gallery section">
+            <div class="container">
+                <div class="category-gallery__content">
+                    <div class="category-gallery__grid" id="category-photos">
+                        <!-- Photos will be loaded by JavaScript -->
+                    </div>
+
+                    <div class="category-gallery__empty" id="category-empty" style="display: none;">
+                        <i data-lucide="camera" class="category-gallery__empty-icon"></i>
+                        <h2 class="category-gallery__empty-title">Galerie en cours de création</h2>
+                        <p class="category-gallery__empty-text">
+                            Cette section sera bientôt enrichie avec de nouvelles photos.
+                        </p>
+                        <a href="contact.html" class="btn btn--primary">
+                            Me contacter pour un projet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Categories -->
+        <section class="related-categories section section--alt">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Découvrir d'autres univers</h2>
+                </div>
+                
+                <div class="related-categories__grid" id="related-categories">
+                    <!-- Related categories will be loaded by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox__overlay" id="lightbox-overlay"></div>
+        <div class="lightbox__content">
+            <button class="lightbox__close" id="lightbox-close" aria-label="Fermer">
+                <i data-lucide="x" class="lightbox__close-icon"></i>
+            </button>
+            
+            <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Photo précédente">
+                <i data-lucide="chevron-left" class="lightbox__nav-icon"></i>
+            </button>
+            
+            <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Photo suivante">
+                <i data-lucide="chevron-right" class="lightbox__nav-icon"></i>
+            </button>
+            
+            <div class="lightbox__image-container">
+                <img src="" alt="" class="lightbox__image" id="lightbox-image">
+            </div>
+            
+            <div class="lightbox__info" id="lightbox-info">
+                <h3 class="lightbox__title" id="lightbox-title"></h3>
+                <div class="lightbox__meta">
+                    <span class="lightbox__category" id="lightbox-category"></span>
+                    <span class="lightbox__date" id="lightbox-date"></span>
+                    <span class="lightbox__counter" id="lightbox-counter"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer__logo">
+                        <i data-lucide="camera" class="footer__logo-icon"></i>
+                        <span class="footer__logo-text">Alex Dubois</span>
+                    </div>
+                    <p class="footer__description">
+                        Photographe passionné capturant vos moments les plus précieux avec
+                        une approche artistique et authentique.
+                    </p>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Contact</h3>
+                    <div class="footer__contact">
+                        <div class="footer__contact-item">
+                            <i data-lucide="mail" class="footer__contact-icon"></i>
+                            <a href="mailto:contact@alexdubois-photo.fr" class="footer__contact-link">
+                                contact@alexdubois-photo.fr
+                            </a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i data-lucide="phone" class="footer__contact-icon"></i>
+                            <a href="tel:+33612345678" class="footer__contact-link">
+                                +33 6 12 34 56 78
+                            </a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i data-lucide="map-pin" class="footer__contact-icon"></i>
+                            <span>Paris & région parisienne</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Suivez-moi</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <i data-lucide="instagram" class="footer__social-icon"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <i data-lucide="facebook" class="footer__social-icon"></i>
+                        </a>
+                    </div>
+                    <div class="footer__note">
+                        <p>Disponible pour vos projets photographiques partout en France.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2025 Alex Dubois Photographie. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/category.js"></script>
+</body>
+</html>
